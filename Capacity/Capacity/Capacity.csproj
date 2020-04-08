@@ -17,7 +17,7 @@
 
   <ItemGroup>
     <Folder Include="Model\" />
-    <Folder Include="ViewModel\" />
+    <Folder Include="Services\" />
     <Folder Include="View\Company\" />
     <Folder Include="View\User\" />
   </ItemGroup>
