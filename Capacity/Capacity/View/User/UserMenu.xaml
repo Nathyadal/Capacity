@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             Title="Capacity"
+             x:Class="Capacity.View.User.UserMenu">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#d9d9d9" Padding="10,20,10,10">
+            <Label Text="Menú de usuario" HorizontalOptions="Center" FontAttributes="Bold" FontSize="Title"></Label>
+            <Frame  CornerRadius="10" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="White" HeightRequest="120">
+                <Image Aspect="AspectFit" BackgroundColor="White" Source="location.png" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"></Image>
+            </Frame>
+            <Frame CornerRadius="10" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="White" HeightRequest="120">
+                <Image Aspect="AspectFit" BackgroundColor="White" Source="places.png" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"></Image>
+            </Frame>
+            <Frame CornerRadius="10" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="White" HeightRequest="120">
+                <Image Aspect="AspectFit" BackgroundColor="White" Source="user.png" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"></Image>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

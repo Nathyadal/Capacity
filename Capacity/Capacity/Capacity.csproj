@@ -19,6 +19,5 @@
     <Folder Include="Model\" />
     <Folder Include="Services\" />
     <Folder Include="View\Company\" />
-    <Folder Include="View\User\" />
   </ItemGroup>
 </Project>

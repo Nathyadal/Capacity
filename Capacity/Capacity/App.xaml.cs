@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Capacity.View.User;
+using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -10,7 +11,7 @@ namespace Capacity
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new NavigationPage(new UserMenu());
         }
 
         protected override void OnStart()
