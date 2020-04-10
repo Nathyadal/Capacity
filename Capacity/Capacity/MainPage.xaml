@@ -4,12 +4,20 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
+             xmlns:viewmodel="clr-namespace:Capacity.ViewModel"
              x:Class="Capacity.MainPage">
-
-    <StackLayout>
+    <ContentPage.BindingContext>
+        <viewmodel:MainPageViewModel></viewmodel:MainPageViewModel>
+    </ContentPage.BindingContext>
+    <StackLayout BackgroundColor="#e6e6e6" Padding="10,30,10,10">
         <Label Text="CAPACITY" 
            HorizontalOptions="Center"
+           FontSize="Title"
+           FontAttributes="Bold"
            VerticalOptions="StartAndExpand" />
+        <Button Text="Iniciar sesión" Command="{Binding Login}" CornerRadius="10" TextColor="White" BackgroundColor="#ff4d4d" VerticalOptions="End" HorizontalOptions="FillAndExpand"></Button>
+        <Button Text="Registro de empresa" Command="{Binding CompanyRegister}" CornerRadius="10" TextColor="White" BackgroundColor="#ff8080" VerticalOptions="End" HorizontalOptions="FillAndExpand"></Button>
+        <Button Text="Registro de usuarios" Command="{Binding UserRegister}" CornerRadius="10" TextColor="White" BackgroundColor="#ff8080" VerticalOptions="End" HorizontalOptions="FillAndExpand"></Button>
     </StackLayout>
 
 </ContentPage>

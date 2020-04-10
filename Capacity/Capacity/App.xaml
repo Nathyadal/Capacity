@@ -7,8 +7,8 @@
              x:Class="Capacity.App">
     <Application.Resources>
         <ResourceDictionary>
-            <Color x:Key="PrimaryColor">#009973</Color>
-            <Color x:Key="AccentColor">#000000</Color>
+            <Color x:Key="colorPrimary">#ff6666</Color>
+            <Color x:Key="colorAccent">#ff6666</Color>
             <Color x:Key="WindowBackgroundColor">#F5F5F5</Color>
             <Color x:Key="WindowForegroundColor">#1E2222</Color>
             <Color x:Key="TransparentWindowBackgroundColor">#98F5F5F5</Color>

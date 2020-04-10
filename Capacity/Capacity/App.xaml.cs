@@ -11,7 +11,7 @@ namespace Capacity
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new UserMenu());
+            MainPage = new MainPage();
         }
 
         protected override void OnStart()
