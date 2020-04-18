@@ -30,11 +30,11 @@ namespace Capacity.ViewModel
 			}
 		}
 
-		public Command LoginCommand
+		public MyCommand LoginCommand
 		{
 			get
 			{
-				return new Command(Login);
+				return new MyCommand(Login);
 			}
 		}
 

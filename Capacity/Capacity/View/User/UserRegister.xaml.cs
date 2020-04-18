@@ -1,5 +1,4 @@
-﻿using Capacity.ViewModel;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,12 +7,12 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace Capacity.View
+namespace Capacity.View.User
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Login : ContentPage
+    public partial class UserRegister : ContentPage
     {
-        public Login()
+        public UserRegister()
         {
             InitializeComponent();
         }

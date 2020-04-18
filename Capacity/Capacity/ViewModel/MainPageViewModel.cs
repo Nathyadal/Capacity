@@ -1,4 +1,5 @@
-﻿using Capacity.View;
+﻿using Capacity.Utils;
+using Capacity.View;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -37,15 +38,15 @@ namespace Capacity.ViewModel
 		#region Logic
 		private void  LoginPageRedirect()
 		{
-			App.Current.MainPage = new NavigationPage(new Login());
+			MessagingCenter.Send<MainPageViewModel>(this, MainPageConstant.login);
 		}
 		private void CompanyRegisterPageRedirect()
 		{
-			App.Current.MainPage=new NavigationPage(new Login());
+			MessagingCenter.Send<MainPageViewModel>(this, MainPageConstant.companyRegister);
 		}
 		private void UserRegisterPageRedirect()
 		{
-			App.Current.MainPage=new NavigationPage(new Login());
+			MessagingCenter.Send<MainPageViewModel>(this, MainPageConstant.userRegister);
 		}
 		#endregion
 	}
