@@ -46,9 +46,6 @@ namespace Capacity
             currentOrientation = info.Orientation;
 
             var dp = info.Width / info.Density;
-
-            App.Current.Resources["BlogSpan"] = (int)(dp / 300);
-            App.Current.Resources["VideoSpan"] = (int)(dp / 300);
             SpanChanged?.Invoke(null, EventArgs.Empty);
         }
 

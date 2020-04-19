@@ -4,20 +4,30 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             Title="Capacity"
+             Title="Menú de usuario"
              x:Class="Capacity.View.User.UserMenu">
     <ContentPage.Content>
-        <StackLayout BackgroundColor="#d9d9d9" Padding="10,20,10,10">
-            <Label Text="Menú de usuario" HorizontalOptions="Center" FontAttributes="Bold" FontSize="Title"></Label>
-            <Frame  CornerRadius="10" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="White" HeightRequest="120">
-                <Image Aspect="AspectFit" BackgroundColor="White" Source="location.png" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"></Image>
-            </Frame>
-            <Frame CornerRadius="10" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="White" HeightRequest="120">
-                <Image Aspect="AspectFit" BackgroundColor="White" Source="places.png" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"></Image>
-            </Frame>
-            <Frame CornerRadius="10" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="White" HeightRequest="120">
-                <Image Aspect="AspectFit" BackgroundColor="White" Source="user.png" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"></Image>
-            </Frame>
-        </StackLayout>
+        <ScrollView>
+            <StackLayout BackgroundColor="#d9d9d9" Padding="10,10,10,10">
+                <Frame Padding="0" Style="{DynamicResource FrameStyle}" HeightRequest="120" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                    <StackLayout>
+                        <ImageButton Aspect="AspectFit" Clicked="ImageButton_Clicked" WidthRequest="100" HeightRequest="100" BackgroundColor="White" Source="location.png" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"></ImageButton>
+                        <Label Text="Mapa" HorizontalOptions="Center" FontSize="Subtitle" FontAttributes="Bold"></Label>
+                    </StackLayout>
+                </Frame>
+                <Frame Padding="0" Style="{DynamicResource FrameStyle}" HeightRequest="120"  VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                    <StackLayout>
+                        <ImageButton Aspect="AspectFit" WidthRequest="100" HeightRequest="100" BackgroundColor="White" Source="places.png" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"></ImageButton>
+                        <Label Text="Lugares Cercanos" HorizontalOptions="Center" FontSize="Subtitle" FontAttributes="Bold"></Label>
+                    </StackLayout>
+                </Frame>
+                <Frame Padding="0" Style="{DynamicResource FrameStyle}" HeightRequest="120"  VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                    <StackLayout>
+                        <ImageButton Aspect="AspectFit" WidthRequest="100" HeightRequest="100" BackgroundColor="White" Source="user.png" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"></ImageButton>
+                        <Label Text="Favoritos" HorizontalOptions="Center" FontSize="Subtitle" FontAttributes="Bold"></Label>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

@@ -117,7 +117,7 @@
             <Style x:Key="FrameStyleRender" TargetType="Frame">
                 <Setter Property="HasShadow" Value="False" />
                 <Setter Property="Padding" Value="0" />
-                <Setter Property="CornerRadius" Value="5" />
+                <Setter Property="CornerRadius" Value="10" />
                 <Setter Property="BackgroundColor" Value="#f2f2f2"/>
                 <Setter Property="BorderColor" Value="{StaticResource BorderColor}" />
             </Style>

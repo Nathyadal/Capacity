@@ -4,12 +4,23 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
+             xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
+             Title="Mapa"
              x:Class="Capacity.View.User.UserMaps">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout Padding="5,10,5,10">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="20"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Label Grid.Row="0" Grid.Column="0" Text="Provincia" FontSize="Body"></Label>
+                <Picker Grid.Row="1" Grid.Column="0"></Picker>
+                <Label Grid.Row="0" Grid.Column="1" Text="Lugar" FontSize="Body"></Label>
+                <Picker Grid.Row="1" Grid.Column="1"></Picker>
+            </Grid>
+            <maps:Map VerticalOptions="FillAndExpand"></maps:Map>
+            <Button Style="{DynamicResource SubscribeButtonStyle}" Text="Mi Ubicación"></Button>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
